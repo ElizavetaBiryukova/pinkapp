@@ -223,11 +223,11 @@
   }
 }
 
-.gallery__post--panorama {
+.gallery__image--panorama {
   position: relative;
 }
 
-.gallery__post--panorama::before {
+.gallery__image--panorama::before {
   content: "панорама дня";
   position: absolute;
   z-index: 10;
