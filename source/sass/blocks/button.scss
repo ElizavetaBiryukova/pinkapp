@@ -1,0 +1,104 @@
+.button--green {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: $white;
+  text-transform: uppercase;
+  background-color: $green;
+  border: 2px solid $green;
+  border-radius: 1px;
+  padding: 13px 0 13px 0;
+  box-sizing: border-box;
+  width: 278px;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 299px;
+    padding: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 296px;
+  }
+}
+
+.button--green:hover {
+  background-color: $dark-green;
+  border: 2px solid $dark-green;
+}
+
+.button--green:focus,
+.button--green:active {
+  background-color: $dark-green;
+  border: 2px solid $dark-green;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button--green:disabled {
+  background-color: $lightgray;
+  border: 2px solid $lightgray;
+}
+
+.button--pink {
+  border: 3px solid $pink;
+  box-sizing: border-box;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: $pink;
+  width: 280px;
+  padding: 17px 0 17px 0;
+  cursor: pointer;
+  font-family: "Open Sans", "Arial", sans-serif;
+
+  @media (min-width: $tablet-width) {
+    width: 260px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 183px;
+  }
+}
+
+.button--pink:hover,
+.button--pink:focus {
+  background-color: $pink;
+  color: $white;
+}
+
+.button--pink:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.button--gray {
+  opacity: 0.1;
+  border: 3px solid $dark-blue;
+  box-sizing: border-box;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  color: $dark-blue;
+  width: 280px;
+  padding: 15px 0 17px 0;
+  cursor: pointer;
+  font-family: "Open Sans", "Arial", sans-serif;
+
+  @media (min-width: $tablet-width) {
+    width: 260px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 183px;
+  }
+}
+
+.button--gray:hover {
+  opacity: 0.3;
+}
+
+.button--gray:active {
+  color: $white;
+  background-color: $dark-blue;
+}

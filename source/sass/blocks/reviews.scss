@@ -1,0 +1,120 @@
+.reviews {
+  position: relative;
+  background-color: $white;
+  padding-top: 42px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 84px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 960px;
+    margin: auto;
+    padding-top: 171px;
+    background-image: url("../img/quotes.svg");
+    background-position: 443px 72px;
+    background-repeat: no-repeat;
+    padding-bottom: 28px;
+  }
+}
+
+.reviews__author {
+  color: $black;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  max-width: 280px;
+  text-align: center;
+  order: -1;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    order: 0;
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 24px;
+  }
+}
+
+.reviews__quote-text {
+  font-weight: 400;
+  line-height: 30px;
+  max-width: 280px;
+  text-align: center;
+  margin: auto;
+  margin-top: 14px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    max-width: 620px;
+    margin-bottom: 37px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 688px;
+  }
+}
+
+.reviews__slide {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: auto;
+}
+
+.reviews__quote {
+  margin: 0;
+}
+
+.reviews__visually-hidden {
+  display: none;
+  text-align: center;
+  line-height: 30px;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.reviews__toggles {
+  display: flex;
+  justify-content: center;
+  margin: 32px auto 40px auto;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 14px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.reviews__slider-nav {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 33px;
+  }
+}
+
+.reviews__author-description {
+  @media (min-width: $tablet-width) {
+    margin-top: 0;
+    margin-bottom: 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 2px;
+  }
+}

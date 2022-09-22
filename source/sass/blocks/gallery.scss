@@ -1,0 +1,298 @@
+.gallery {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 320px;
+  margin: auto;
+  padding-top: 35px;
+
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    padding-top: 27px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: auto;
+    padding-top: 38px;
+  }
+}
+
+.gallery__post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 19px;
+}
+
+.gallery__post-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.gallery__post-wrapper--panorama-picture {
+  @media (min-width: $tablet-width) {
+    width: 620px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .gallery__post-wrapper--picture {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    margin-top: 27px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery__post-wrapper--picture {
+    width: 940px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 34px;
+    margin-top: 29px;
+  }
+}
+
+.gallery__post-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: $silver;
+  margin: -7px 0 0 0;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    margin: 0;
+  }
+}
+
+.gallery__post-content--panorama {
+  @media (min-width: $tablet-width) {
+    width: 620px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
+}
+
+.gallery__name-bold {
+  font-weight: 700;
+  padding-left: 17px;
+}
+
+.gallery__post-time {
+  font-weight: 300;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.gallery__post-text {
+  max-width: 253px;
+  font-weight: 400;
+  padding-left: 17px;
+  margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    min-height: 48px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 27px;
+  }
+}
+
+.gallery__post-text--panorama {
+  margin-top: 0;
+
+  @media (min-width: $tablet-width) {
+    max-width: 520px;
+    margin-top: -2px;
+    padding-bottom: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 940px;
+    padding-left: 27px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: -1px;
+  }
+}
+
+.gallery__post-likes {
+  color: $pink;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-size: 12px;
+  line-height: 24px;
+  margin: -3px 0 0 2px;
+}
+
+.gallery__heart-icon {
+  display: block;
+  width: 13px;
+  height: 12px;
+  margin: 2px 0 0 17px;
+  border: none;
+  background-color: transparent;
+  background-image: url("../img/icon-heart.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 1px;
+  }
+}
+
+.gallery__like {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  margin-bottom: 18px;
+}
+
+
+.gallery__post-author {
+  margin-top: 19px;
+}
+
+@media (min-width: $tablet-width) {
+  .gallery__like {
+    grid-template-columns: 6fr 1fr;
+    margin-bottom: 21px;
+    margin-top: 2px;
+  }
+
+  .gallery__post-likes {
+    grid-column: 1;
+    grid-row: 1;
+    margin-left: 29px;
+  }
+
+  .gallery__heart-icon {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .gallery__like--panorama {
+    grid-template-columns: 4fr 1fr;
+    grid-column-gap: 16px;
+    order: -2;
+    margin: 27px 14px 0 0;
+  }
+
+  .gallery__post-author {
+    margin-top: 23px;
+    padding-left: 12px;
+  }
+
+  .gallery__post-author--panorama {
+    order: -3;
+    margin-top: 21px;
+  }
+
+  .gallery__image {
+    margin-bottom: -6px;
+  }
+
+  .gallery__post {
+    margin-bottom: 20px;
+  }
+}
+
+.gallery__post--margin {
+  margin-bottom: 20.5px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
+}
+
+.gallery__post--panorama {
+  position: relative;
+}
+
+.gallery__post--panorama::before {
+  content: "панорама дня";
+  position: absolute;
+  z-index: 10;
+  top: 1px;
+  right: 20px;
+  padding: 6px 20px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  text-transform: uppercase;
+  background-color: $pink;
+  color: $white;
+
+  @media (min-width: $tablet-width) {
+    top: 56px;
+  }
+
+  @media (min-width: $desktop-width) {
+    right: 130px;
+  }
+}
+
+.gallery__post-picture {
+  @media (min-width: $tablet-width) {
+    background-color: rgba(40, 54, 69, 0.1);
+    width: 300px;
+    height: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 400px;
+  }
+}
+
+.gallery__text-br {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery__post-author {
+    margin-top: 24px;
+    padding-left: 9px;
+  }
+
+  .gallery__like {
+    margin-top: 1px;
+  }
+
+  .gallery__like--panorama {
+    margin-top: 28px;
+    margin-right: 17px;
+  }
+
+  .gallery__post-likes {
+    margin-left: 27px;
+  }
+
+  .gallery__post-likes--panorama {
+    margin-left: 17px;
+  }
+
+  .gallery__post--panorama {
+    overflow: hidden;
+    width: 100%;
+  }
+}

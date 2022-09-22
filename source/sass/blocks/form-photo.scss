@@ -1,0 +1,243 @@
+.form-photo {
+  width: 280px;
+  margin: auto;
+}
+
+.form-photo__filter--hidden {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+  }
+}
+
+.form-photo__filter-range {
+  appearance: none;
+  width: 240px;
+  height: 2px;
+  background-color: $dark-blue;
+  outline: none;
+  margin-bottom: 34px;
+}
+
+.form-photo__filter-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  box-sizing: border-box;
+  background-color: $white;
+  border: solid 2px $pink;
+  border-radius: 100%;
+}
+
+.form-photo__filter-range::-webkit-slider-thumb:active {
+  background-color: $pink;
+}
+
+.form-photo__filter-range::-webkit-slider-thumb:hover {
+  background-color: $pink;
+}
+
+.form-photo__filter-range::-moz-range-thumb {
+  appearance: none;
+  width: 14px;
+  height: 14px;
+  box-sizing: border-box;
+  background-color: $white;
+  border: solid 2px $pink;
+  border-radius: 100%;
+}
+
+.form-photo__filter-range::-moz-range-thumb:active {
+  background-color: $pink;
+}
+
+.form-photo__filter-range::-moz-range-thumb:hover {
+  background-color: $pink;
+}
+
+.form-photo__filter-button {
+  border: none;
+  background-color: transparent;
+}
+
+.form-photo__button {
+  display: block;
+}
+
+.form-photo__button:first-child {
+  margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 24px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+    margin-right: 20px;
+  }
+}
+
+.form-photo__filters {
+  display: flex;
+  width: 240px;
+  flex-wrap: wrap;
+  margin: auto;
+  padding-top: 32px;
+}
+
+.form-photo__icon-wrapper {
+  display: none;
+}
+
+.form-photo__filters-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 240px;
+  padding-right: 23px;
+  padding-left: 10px;
+  margin-bottom: 22px;
+}
+
+.form-photo__buttons {
+  margin-top: 36px;
+}
+
+@media (min-width: $tablet-width) {
+  .form-photo {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    width: 620px;
+  }
+
+  .form-photo__icon-wrapper {
+    display: block;
+  }
+
+  .form-photo__filter {
+    display: flex;
+    width: 271px;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(40, 54, 69, 0.1);
+  }
+
+  .form-photo__filter:not(:first-child) {
+    margin-top: 25px;
+  }
+
+  .form-photo__filters-buttons {
+    display: none;
+  }
+
+  .form-photo__filters {
+    flex-direction: column;
+    width: 260px;
+    padding-top: 0;
+    min-height: 180px;
+    margin: 8px 11px 23px 21px;
+  }
+
+  .form-photo__filter-range {
+    width: 202px;
+    margin: 10px 19px 34px 0;
+  }
+
+  .form-photo__buttons {
+    margin: 41px 12px 0 20px;
+  }
+
+  .form-photo__foolbar {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .form-photo__icon-contrast {
+    margin-left: 4px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form-photo__picture {
+    width: 300px;
+    height: 400px;
+    background-color: rgba(40, 54, 69, 0.1);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form-photo {
+    width: 940px;
+  }
+
+  .form-photo__filter-range {
+    width: 288px;
+    margin: 19px 0 34px 0;
+  }
+
+  .form-photo__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 119px 5px 0 28px;
+  }
+
+  .form-photo__picture {
+    margin-left: 79px;
+  }
+
+  .form-photo__icon-wrapper {
+    width: 44px;
+  }
+
+  .form-photo__foolbar {
+    margin-right: 56px;
+  }
+
+  .form-photo__filters {
+    margin-top: 0;
+    width: 410px;
+  }
+
+  .form-photo__filter {
+    width: 380px;
+    margin: 0 20px 0 7px;
+  }
+
+  .form-photo__filter:not(:first-child) {
+    margin-top: 17px;
+  }
+
+  .form-photo__icon-crop {
+    width: 44px;
+    height: 44px;
+  }
+
+  .form-photo__icon-fill {
+    width: 48px;
+    height: 43px;
+  }
+
+  .form-photo__icon-contrast {
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.form-photo__img {
+  fill: rgba(40, 54, 69, 0.3);
+}
+
+.form-photo__img--current {
+  fill: $pink;
+}
+
+.form-photo__img:hover {
+  fill: rgba(40, 54, 69, 0.5);
+}
+
+.form-photo__icon {
+  fill: $pink;
+}

@@ -1,0 +1,38 @@
+.slider-nav {
+  position: relative;
+  width: 940px;
+  margin: auto;
+}
+
+.slider-nav__toggle {
+  width: 22px;
+  height: 44px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+}
+
+.slider-nav__toggle--prev {
+  position: absolute;
+  top: -169px;
+  left: -6px;
+}
+
+.slider-nav__toggle--next {
+  position: absolute;
+  top: -169px;
+  left: 912px;
+}
+
+.slider-nav__img {
+  fill: rgba(40, 54, 69, 0.3);
+}
+
+.slider-nav__img:hover,
+.slider-nav__img:focus {
+  fill: rgba(40, 54, 69, 0.6);
+}
+
+.slider-nav__img:active {
+  fill: rgba(40, 54, 69, 0.1);
+}

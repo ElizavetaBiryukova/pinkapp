@@ -1,0 +1,264 @@
+.download {
+  background-color: $the-darkest-blue;
+
+  @media (min-width: $desktop-width) {
+    background-image: url("../img/back-desktop.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding-top: 108px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-desktop@2x.jpg");
+    }
+  }
+}
+
+.download__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  width: 100%;
+}
+
+.download__wrapper-header {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: auto;
+  width: 100%;
+  background-image: url("../img/back-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/back-mobile@2x.jpg");
+  }
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/back-tablet.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/back-tablet@2x.jpg");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    background-image: none;
+  }
+}
+
+.download__header {
+  padding: 66px 0 267px 0;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: $mobile-width;
+  background-image: url("../img/hand-mobile.png");
+  background-repeat: no-repeat;
+  background-position: bottom;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/hand-mobile@2x.png");
+    background-size: 320px;
+  }
+
+  @media (min-width: $tablet-width) {
+    justify-content: space-between;
+    padding-bottom: 352px;
+    width: $tablet-width;
+    background-image: url("../img/hand-tablet.png");
+    background-position: bottom right;
+    background-size: 660px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hand-tablet@2x.png");
+    }
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 402px;
+    width: $desktop-width;
+    background-image: url("../img/hand-desktop.png");
+    background-position: 26px 99px;
+    background-size: 1050px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/hand-desktop@2x.png");
+    }
+  }
+}
+
+.download__slogan {
+  color: $white;
+  font-size: 24px;
+  line-height: 28.8px;
+  max-width: 280px;
+  text-align: center;
+  margin-bottom: 50px;
+  padding-top: 0;
+  font-weight: 300;
+
+  @media (min-width: $tablet-width) {
+    font-size: 40px;
+    line-height: 120%;
+    max-width: 240px;
+    padding: 98px 0 0 50px;
+    margin-bottom: 28px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 50px;
+    line-height: 68px;
+    padding: 0 0 0 39px;
+    margin-bottom: 37px;
+    margin-top: 35px;
+  }
+}
+
+.download__download-block-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: auto;
+  width: $mobile-width;
+  margin-top: 26px;
+
+  @media (min-width: $tablet-width) {
+    width: $tablet-width;
+    position: relative;
+    margin-top: 0;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: $desktop-width;
+  }
+}
+
+.download__download-block {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  max-width: 280px;
+  margin: auto;
+
+  @media (min-width: $tablet-width) {
+    position: absolute;
+    top: -353px;
+    align-content: space-between;
+    margin-left: 20px;
+    max-width: 310px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 11px;
+    top: -403px;
+  }
+}
+
+.download__download-link {
+  color: $white;
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  border: 3px solid $white;
+  box-sizing: border-box;
+  border-radius: 29px;
+  padding: 17px 0 16px 0;
+  width: 280px;
+  text-align: center;
+  margin-bottom: 18px;
+
+  @media (min-width: $tablet-width) {
+    width: 300px;
+    padding: 16px 0 16px 0;
+    margin-bottom: 32px;
+  }
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+    margin-bottom: 52px;
+  }
+}
+
+.download__download-link:hover {
+  color: $pink;
+  background-color: $white;
+}
+
+.download__download-link:active {
+  color: rgba(210, 40, 86, 0.3);
+}
+
+.download__text {
+  color: $white;
+  max-width: 280px;
+  text-align: center;
+  padding-bottom: 17px;
+  font-weight: 300;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+    max-width: 310px;
+    padding-bottom: 97px;
+    margin-right: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 107px;
+  }
+}
+
+.download__os-list {
+  display: grid;
+  grid-template-columns: 47px 46px 45px;
+  column-gap: 32px;
+  list-style: none;
+  margin-bottom: 5px;
+  margin-left: 40px;
+  padding: 0;
+
+  @media (min-width: $tablet-width) {
+    grid-template-columns: 47px 48px 49px;
+    margin-left: 45px;
+    margin-bottom: 12px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 30px;
+  }
+}
+
+.download__os-item {
+  display: block;
+}
+
+.download__os-item--apple {
+  height: 56px;
+  background: url("../img/apple-logo.svg") no-repeat center;
+}
+
+.download__os-item--android {
+  height: 51px;
+  margin-top: 7px;
+  background: url("../img/android-logo.svg") no-repeat center;
+
+  @media (min-width: $desktop-width) {
+    margin-top: 10px;
+  }
+}
+
+.download__os-item--windows {
+  height: 50px;
+  margin-top: 7px;
+  background: url("../img/microsoft-logo.svg") no-repeat center;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 7px;
+  }
+}

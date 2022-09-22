@@ -1,0 +1,26 @@
+.slider__toggle {
+  box-sizing: content-box;
+  margin-left: 9px;
+  margin-right: 10px;
+  padding: 0;
+  width: 6px;
+  height: 6px;
+  border: 0;
+  border-radius: 50%;
+  background-color: rgba(40, 54, 69, 0.3);
+  cursor: pointer;
+}
+
+.slider__toggle:not(.slider__toggle--current):hover {
+  background-color: rgba(40, 54, 69, 0.6);
+}
+
+.slider__toggle:not(.slider__toggle--current):active {
+  background-color: rgba(40, 54, 69, 0.1);
+}
+
+.slider__toggle--current {
+  box-shadow: 0 0 0 3px $font-color-base;
+  overflow: visible;
+  background-color: transparent;
+}

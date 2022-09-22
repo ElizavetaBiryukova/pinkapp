@@ -1,0 +1,132 @@
+.modal-form {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: $mobile-width;
+  margin: auto;
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  background-color: $white;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+
+  @media (min-width: $tablet-width) {
+    width: 460px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 780px;
+  }
+}
+
+.modal-form__top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.modal-form__title {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 24px;
+  color: $black;
+  text-align: center;
+  margin-top: 39px;
+  margin-bottom: 12px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 255px;
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: 44px;
+    margin-bottom: 5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 398px;
+  }
+}
+
+.modal-form__text {
+  max-width: 280px;
+  text-align: center;
+  margin-bottom: 43px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 300px;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 33px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 356px;
+    margin-bottom: 62px;
+  }
+}
+
+.modal-form__text--close-window {
+  max-width: 266px;
+  margin-bottom: 33px;
+
+  @media (min-width: $tablet-width) {
+    max-width: 325px;
+    margin-bottom: 29px;
+  }
+
+  @media (min-width: $desktop-width) {
+    max-width: 380px;
+    margin-bottom: 36px;
+  }
+}
+
+.modal-form__bottom {
+  margin-bottom: 50px;
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 0;
+  }
+}
+
+.modal-form__button {
+  padding: 14px 0 14px 0;
+}
+
+.modal-form__bottom--silver {
+  background-color: $silver;
+  padding: 53px 0 51px 0;
+  width: 320px;
+  text-align: center;
+  margin-bottom: 0;
+
+  @media (min-width: $tablet-width) {
+    padding: 51px 70px 50px 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 780px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal-form__bottom {
+    background-color: $silver;
+    width: 780px;
+    text-align: center;
+    padding: 52px 0 52px 0;
+  }
+}
+
+.modal-form__br-text {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal-form__button--close-window {
+    width: 459px;
+  }
+}
