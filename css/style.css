@@ -104,7 +104,6 @@
     position: absolute;
     top: 0;
     box-sizing: border-box;
-    max-width: 1920px;
     min-width: 320px;
     background-color: rgba(0, 0, 0, 0.3);
     z-index: 10;
@@ -2774,11 +2773,11 @@
   }
 }
 
-.gallery__post--panorama {
+.gallery__image--panorama {
   position: relative;
 }
 
-.gallery__post--panorama::before {
+.gallery__image--panorama::before {
   content: "панорама дня";
   position: absolute;
   z-index: 10;
@@ -2793,12 +2792,12 @@
   color: #ffffff;
 }
 @media (min-width: 660px) {
-  .gallery__post--panorama::before {
+  .gallery__image--panorama::before {
     top: 56px;
   }
 }
 @media (min-width: 960px) {
-  .gallery__post--panorama::before {
+  .gallery__image--panorama::before {
     right: 130px;
   }
 }
